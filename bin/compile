@@ -14,7 +14,6 @@ CACHE_FILE="$CACHE_DIR/imagemagick.tar.gz"
 
 if [ ! -f $CACHE_FILE ]; then
   # install imagemagick
-
   IMAGE_MAGICK_VERSION="6.9.2-0"
   IMAGE_MAGICK_FILE="ImageMagick-$IMAGE_MAGICK_VERSION.tar.gz"
   IMAGE_MAGICK_DIR="ImageMagick-$IMAGE_MAGICK_VERSION"
@@ -33,7 +32,6 @@ if [ ! -f $CACHE_FILE ]; then
   rm -rf $IMAGE_MAGICK_DIR
 
   # cache for future deploys
-
   echo "-----> Caching ImageMagick installation"
   cd $VENDOR_DIR
   REL_INSTALL_DIR="imagemagick"
@@ -47,7 +45,6 @@ else
 fi
 
 # update PATH and LD_LIBRARY_PATH
-
 echo "-----> Updating environment variables"
 PROFILE_PATH="$BUILD_DIR/.profile.d/imagemagick.sh"
 ACTUAL_INSTALL_PATH="$HOME/vendor/imagemagick"
