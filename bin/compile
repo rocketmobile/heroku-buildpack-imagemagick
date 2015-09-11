@@ -41,9 +41,7 @@ if [ ! -f $CACHE_FILE ]; then
   mv $REL_INSTALL_DIR.tar.gz $CACHE_FILE
 
 else
-
   # cache exists, extract it
-
   echo "-----> Extracting ImageMagick $CACHE_FILE => $VENDOR_DIR"
   tar xzf $CACHE_FILE -C $VENDOR_DIR
 fi
