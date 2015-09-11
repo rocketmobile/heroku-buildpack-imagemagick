@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "ImageMagick"
+exit 0
