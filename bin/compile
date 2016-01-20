@@ -17,7 +17,7 @@ if [ ! -f $CACHE_FILE ]; then
   IMAGE_MAGICK_VERSION="6.9.2-0"
   IMAGE_MAGICK_FILE="ImageMagick-$IMAGE_MAGICK_VERSION.tar.gz"
   IMAGE_MAGICK_DIR="ImageMagick-$IMAGE_MAGICK_VERSION"
-  IMAGE_MAGICK_URL="http://www.imagemagick.org/download/$IMAGE_MAGICK_FILE"
+  IMAGE_MAGICK_URL="http://www.imagemagick.org/download/releases/$IMAGE_MAGICK_FILE"
 
   echo "-----> Downloading ImageMagick from $IMAGE_MAGICK_URL"
   curl -L --silent $IMAGE_MAGICK_URL | tar xz
